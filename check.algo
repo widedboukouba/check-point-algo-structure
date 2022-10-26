@@ -1,0 +1,31 @@
+ALGORITHM check_point
+VAR
+   tab1 : ARRAY_OF INTEGER[5]; 
+   tab2 : ARRAY_OF INTEGER[5]; 
+   tab3 : ARRAY_OF INTEGER[5];
+   i : INTEGER; 
+   s: INTEGER;
+   j: INTEGER;
+    n: INTEGER;
+BEGIN
+   tab3:=[]
+  tab1 := [1,2,3,5,7]; 
+  Write('Print Array :')
+   tab2 := [8,9,5,4,1]; 
+  Write('Print Array :')
+ 
+
+  FOR i FROM 0 TO 4  DO   
+    FOR j FROM 0 TO 4  DO
+     IF (tab1[i]==tab2[j]) THEN
+       tab3[i]=tab[i]
+     END_IF
+     
+    END_FOR  
+  END_FOR
+  s:=0;
+FOR i FROM 0 TO 4  DO 
+    s:=s+tab3[i];
+     Write('la somme est',s)
+END_FOR
+  END
